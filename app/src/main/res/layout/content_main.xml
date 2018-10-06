@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_welcome"
+            android:text="@string/text_welcome"
+            android:textSize="22dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_height"
+            android:text="@string/text_height"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_feet"
+                android:hint="@string/edit_feet"
+                android:ems="6"
+                android:maxLength="1"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_inches"
+                android:hint="@string/edit_inches"
+                android:ems="6"
+                android:layout_marginLeft="10dp"
+                android:maxLength="2"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_weight"
+            android:hint="@string/text_weight"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_pounds"
+            android:hint="@string/edit_pounds"
+            android:maxLength="3"
+            android:ems="8"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_calculate_bmi"
+            android:text="@string/button_calculate_bmi"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_result"
+            android:text="@string/text_result"
+            android:textSize="20sp"
+
+            />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
